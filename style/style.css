@@ -1,0 +1,236 @@
+/* ------------------General Styles------------- */
+/* --------Colors------ 
+-Main text color: #592720;
+*/
+
+body {
+    line-height: 1.5;
+    margin: 0 auto;
+    font-family: "Nunito";
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+@media (min-width: 46.8em) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* ----------------------Header----------------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2e4d8;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+}
+
+.nav-list a,
+.nav-list a:visited {
+    color: black;
+}
+
+/* .nav-list a:hover {
+    background-color: #115923;
+    color: #f2e4d8;
+    padding: 0.2rem 0.2rem;
+    border-radius: 4%;
+} */
+
+@media (min-width: 46.8em) {
+    .header {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .nav-list {
+        gap: 2rem;
+    }
+}
+
+/* -----------------Landing Section------------- */
+.landing-section {
+    position: relative;
+}
+
+.landing-title {
+    position: absolute;
+    left: 3%;
+    top: 25%;
+}
+
+.landing-title h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.landing-title p {
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.landing-section img {
+    display: block;
+    object-fit: cover;
+}
+
+@media (min-width: 28.12em) {
+    .landing-title {
+        position: absolute;
+        left: 5%;
+        top: 30%;
+    }
+    .landing-title h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 46.8em) {
+    .landing-section {
+        position: relative;
+    }
+
+    .landing-title {
+        position: absolute;
+        left: 10%;
+        top: 30%;
+    }
+
+    .landing-title h1 {
+        font-size: 4rem;
+    }
+
+    .landing-title p {
+        font-size: 1.5rem;
+    }
+
+    .landing-section img {
+        aspect-ratio: 16/5;
+        min-height: 25rem;
+    }
+}
+
+/* --------------------About-me Section----------------- */
+.about-me {
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.about-me h2 {
+    text-align: center;
+}
+
+.about-me p {
+    text-align: left;
+}
+
+/* ---------------------Projects Section----------------- */
+.my-projects {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    margin-bottom: 2rem;
+}
+
+.projects-title {
+    text-align: center;
+}
+
+.project-card {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+
+    padding-bottom: 0.7rem;
+    text-align: center;
+    width: 70%;
+    background-color: #efb3a2;
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+.project-card div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.project-card p {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #f2e4d8;
+    background-color: black;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* ---------------------Contact-me Section----------------- */
+.contact-me {
+    margin: 0 auto;
+    width: 90%;
+}
+
+form {
+    text-align: left;
+}
+.contact-me h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.contact-me ul {
+    margin-top: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-me li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+lable,
+input {
+    display: block;
+}
+
+/* --------------------------Footer Section-------------------- */
+footer {
+    background-color: #f2e4d8;
+}
+
+footer p {
+    margin-bottom: 0;
+    padding: 0.5rem 1rem;
+    font-size: 0.6rem;
+}
