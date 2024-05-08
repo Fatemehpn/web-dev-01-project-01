@@ -169,7 +169,7 @@ header p {
         align-items: center;
     }
     .about-me-title {
-        margin-bottom: 0;
+        margin-bottom: 1rem;
         margin-top: 0;
         align-self: center;
     }
@@ -238,7 +238,7 @@ header p {
     }
 
     .projects-title {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
     .projects-wrapper {
