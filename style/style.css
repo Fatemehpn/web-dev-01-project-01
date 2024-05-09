@@ -1,7 +1,14 @@
 /* ------------------General Styles------------- */
 /* --------Colors------ 
--Main text color: #592720;
+-text-color:black;
+-background-color: #f2e4d8;
+-card-color: #efb3a2;
+
+
 */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     line-height: 1.5;
@@ -11,6 +18,10 @@ body {
 
 h1 {
     font-size: 2rem;
+}
+h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 p {
     font-size: 1rem;
@@ -46,6 +57,7 @@ header p {
 
 .nav-list a {
     text-decoration: none;
+    padding: 0.4rem 0.6rem;
 }
 
 .nav-list a,
@@ -53,12 +65,15 @@ header p {
     color: black;
 }
 
-/* .nav-list a:hover {
-    background-color: #115923;
+.nav-list a:focus {
+    border: 1px solid black;
+}
+.nav-list a:hover {
+    background-color: black;
     color: #f2e4d8;
-    padding: 0.2rem 0.2rem;
-    border-radius: 4%;
-} */
+
+    border-radius: 1rem;
+}
 
 @media (min-width: 46.8em) {
     .header {
@@ -144,7 +159,8 @@ header p {
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
 }
 
 .about-me h2 {
@@ -159,7 +175,6 @@ header p {
     .about-me {
         margin: 0 auto;
         width: 65%;
-        margin-bottom: 6rem;
         /* border: 2px solid black;
         padding: 2rem 3rem; */
         height: 60vh;
@@ -226,17 +241,49 @@ header p {
     border-radius: 1rem;
     text-align: center;
     font-size: 1rem;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.project-card a:hover {
+    background-color: #f2e4d8;
+    color: black;
+}
+
+.project-card a:focus {
+    border: 1px solid black;
+}
+
+@media (min-width: 30.62em) {
+    .project-card {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+        justify-content: space-between;
+    }
+    .project-card img {
+        width: 100%;
+        max-height: 20rem;
+        object-fit: cover;
+    }
 }
 
 @media (min-width: 46.8em) {
     .my-projects {
-        margin-top: 2rem;
+        margin-bottom: 0;
         width: 100%;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         height: 100vh;
     }
 
+    .project-section-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .projects-title {
         margin-bottom: 3rem;
     }
@@ -256,9 +303,16 @@ header p {
         height: fit-content;
     }
 
+    .project-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-card p {
+        font-size: 1.2rem;
+    }
     .project-card img {
         width: 100%;
-        max-height: 30rem;
+        max-height: 15rem;
         object-fit: cover;
     }
 }
@@ -266,8 +320,14 @@ header p {
 @media (min-width: 71.25em) {
     .project-card {
         width: 22%;
-        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+        justify-content: space-between;
     }
+    /* .project-card img {
+        height: 70%;
+    } */
 }
 /* ---------------------Contact-me Section----------------- */
 .contact-me {
@@ -283,26 +343,57 @@ form {
     margin-bottom: 0.5rem;
 }
 
-.contact-me ul {
+.form-wrapper {
     margin-top: 0;
     padding-left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.contact-me li {
+.form-element {
     list-style: none;
     margin-bottom: 0.5rem;
 }
 
-lable,
-input {
+label,
+input,
+textarea {
     display: block;
+}
+textarea {
+    height: 5rem;
+}
+
+#submit {
+    /* width: 10rem; */
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: black;
+    color: #f2e4d8;
 }
 
 @media (min-width: 46.8em) {
     .contact-me {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label,
+    input {
+        width: 30rem;
+    }
+    textarea {
+        width: 30rem;
+        height: 10rem;
+    }
+    #submit {
+        width: 10rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 1rem;
+        background-color: black;
+        color: #f2e4d8;
     }
 }
 
