@@ -57,7 +57,7 @@ header p {
 
 .nav-list a {
     text-decoration: none;
-    padding: 0.4rem 0.6rem;
+    padding: 0.2rem 0.2rem;
 }
 
 .nav-list a,
@@ -71,7 +71,6 @@ header p {
 .nav-list a:hover {
     background-color: black;
     color: #f2e4d8;
-
     border-radius: 1rem;
 }
 
@@ -85,6 +84,12 @@ header p {
     .nav-list {
         gap: 2rem;
     }
+
+    .nav-list a {
+        text-decoration: none;
+        padding: 0.4rem 0.6rem;
+    }
+
     header p {
         font-size: 1.5rem;
     }
@@ -335,9 +340,9 @@ header p {
     width: 90%;
 }
 
-form {
+/* form {
     text-align: left;
-}
+} */
 .contact-me h2 {
     text-align: center;
     margin-bottom: 0.5rem;
@@ -352,6 +357,7 @@ form {
 }
 .form-element {
     margin-bottom: 1rem;
+    align-self: center;
 }
 
 label,
